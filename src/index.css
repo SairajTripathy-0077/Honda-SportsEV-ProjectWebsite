@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .text-outline{
+        -webkit-text-stroke: 2px white;
+    }
+}
+@layer components{
+    .outlineBtn{
+        @apply border-[3px] rounded-xl px-6 py-2 ;
+    }
+    .rounded-icons{
+        @apply h-[30px] w-[30px] flex 
+        items-center justify-center cursor-pointer bg-white/30
+        rounded-full p-2 hover:scale-110 duration-200
+    }
+    .glowing-shadow {
+        @apply shadow-[0_0_40px_10px_#d2e6ff,inset_0_0_40px_10px_#d2e6ff];
+    }
+}
